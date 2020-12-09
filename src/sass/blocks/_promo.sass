@@ -1,0 +1,112 @@
+.promo 
+    min-height: 580px
+    padding: 23px 0 82px 0
+    background: url("../img/first_bg.png") center (center/cover) no-repeat
+    &__header
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+    &__logo
+        width: 95px
+        height: 99px
+    &__head
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        list-style-type: none
+    &__link
+        position: relative
+        font-size: 15px
+        font-weight: 300
+        margin-right: 20px
+        a
+            color: $white-color
+            text-decoration: none
+        &:after
+            content: " "
+            background-color: $white-color
+            width: 1px
+            height: 23px
+            opacity: 0.4
+            position: absolute
+            margin-left: 10px
+        &:last-child
+            &::after
+                content: " "
+                display: none
+        &:hover
+            &::before
+                content: " "
+                position: absolute
+                text-decoration: underline
+                background: $main-color
+                width: 100%
+                height: 1px
+                top: 20px
+            a
+                color: $main-color        
+    &__conection
+        margin-right: 18px
+    &__quest
+        font-size: 14px
+        font-weight: 300
+        text-align: right
+        color: $white-color
+    &__phone
+        font-size: 19px
+        font-weight: 700
+        line-height: 1.26
+        text-align: right
+        color: $white-color
+    &__subtitle
+        font-size: 24px
+        font-weight: 300
+        text-align: center
+        color: $white-color
+    &__title
+        text-align: center
+        text-transform: uppercase
+        &_red
+            font-size: 54px
+            font-weight: 700
+            color: $main-color
+        &_white
+            font-size: 33px
+            color: $white-color
+    &__line
+        display: flex   
+        justify-content: center
+        align-items: center
+        margin-top: 20px  
+    &__dot
+        width: 10px
+        height: 10px
+        border-radius: 100%
+        background-color: $white-color
+        margin: 0 15px
+    &__divider
+        width: 375px
+        height: 1px
+        background-color: $white-color
+    &__wrapper
+        margin-top: 30px
+        display: grid
+        grid-template-columns: repeat(4, 1fr) 
+        grid-auto-columns: minmax(200px, auto)
+        grid-column-gap: 20px
+    &__icon
+        font-size: 16px
+        font-weight: 300
+        line-height: 1.38
+        text-align: center
+        color: $white-color
+        display: flex;
+        flex-direction: column
+        justify-content: center
+    &__descr
+        margin-top: 12px
+
+        
+    
+
