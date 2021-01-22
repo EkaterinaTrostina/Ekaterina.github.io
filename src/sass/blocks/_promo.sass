@@ -7,27 +7,30 @@
         flex-direction: row
         justify-content: space-between
         list-style-type: none
+        padding: 0
+        padding-left: 10px 
     &__logo
         width: 95px
         height: 99px
         img
             width: 100%
+            height: 100%
     &__link
+        margin-right: 20px
         position: relative
         font-size: 15px
         font-weight: 300
-        margin-right: 20px
         a
             color: $white-color
             text-decoration: none
         &:after
             content: " "
+            margin-left: 10px
             background-color: $white-color
             width: 1px
             height: 23px
             opacity: 0.4
             position: absolute
-            margin-left: 10px
         &:last-child
             &::after
                 content: " "
