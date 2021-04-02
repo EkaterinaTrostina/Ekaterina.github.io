@@ -11,13 +11,15 @@
         margin-top: 30px
     &__icon
         display: grid
-        grid-template-columns: 60px 440px
-        grid-template-rows: 20px minmax(40px, auto)
+        grid-template-columns: auto auto
+        grid-template-rows: minmax(20px,auto) minmax(40px, auto)
         grid-column-gap: 16px
         grid-row-gap: 5px
+        align-items: flex-start
+        align-self: baseline
         &_animated
             &:hover
-                animation: iconsbeat 2s
+                animation: iconsbeat 2s  infinite
     &__img
         grid-row: 1/3
     &__subtitle

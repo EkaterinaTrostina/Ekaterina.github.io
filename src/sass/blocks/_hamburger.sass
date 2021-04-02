@@ -1,0 +1,47 @@
+.hamburger
+    display: none
+    align-items: center
+    position: fixed
+    top: 20px
+    left: 20px
+    width: 26px
+    height: 26px
+    cursor: pointer
+    span
+        position: relative
+        height: 3px
+        width: 100%
+        background-color: $main-color
+        &::before, &::after
+            position: absolute
+        &::before
+            content: ''
+            top: 8px    
+            width: 100%
+            height: 100%
+            background-color: $main-color
+        &::after
+            content: ''
+            top: -8px 
+            width: 100%
+            height: 100%
+            background-color: $main-color
+    &__wrap
+        display: none
+        margin-left: 10px
+    &__link
+        width: 50%
+        height: 100%
+        background-color: rgba(365, 365, 365, .5)
+        text-align: center
+        margin-top: 15px
+        position: relative
+        font-size: 15px
+        font-weight: 300
+        a
+            color: $main-color
+            text-decoration: none
+            &:hover
+                color: black
+.active
+    display: block

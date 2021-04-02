@@ -87,7 +87,15 @@ window.addEventListener('DOMContentLoaded', function(){
     };
 
 
-    //validate form
+    //hamburger
+    const hamburgerBtn = document.querySelector('.hamburger'),
+          hamburgerMenu = document.querySelector('.hamburger__wrap');
+    function toggleHamburger(trigger, menu){
+        trigger.addEventListener('click', function(){
+            menu.classList.toggle = 'active';
+        });
+    }
+    toggleHamburger(hamburgerBtn, hamburgerMenu);
 
 
 

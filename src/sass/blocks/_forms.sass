@@ -1,5 +1,16 @@
 .forms
     position: relative
+    &__bord
+        position: absolute
+        padding: 0 10px 0 10px
+        background-color: #fff
+        left: 50%
+        transform: translateX(-50%)
+        &_icon
+            height: 110px
+            top: -60px
+        &_wrap
+            top: 143px
     &_cards
         border: solid 1px #898989
         height: 166px
@@ -24,7 +35,6 @@
             border-radius: 25px
             border: solid 0.5px rgba(0, 0, 0, 0.21)
             outline: none
-            background-color: #ffffff
     #forms__textarea
         grid-column: 1/4
         border-radius: 0
