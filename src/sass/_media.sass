@@ -14,10 +14,8 @@
         &__phone
             font-size: 17px
     .logistics
-        &__item
-            margin-right: 20px
-        &__img
-            height: 180px
+        &__wrapper
+            grid-gap: 20px
     .cards 
         &__wrapper
             grid-template-columns: repeat(3, 1fr)
@@ -28,7 +26,175 @@
 @media (max-width: 991px)
     .container
         max-width: 700px
-        
-            
+    .hamburger
+        display: flex
+    .promo
+        &__header
+            justify-content: space-around
+        &__head
+            display: none
+        &__subtitle
+            margin-top: 15px
+    .forms
+        &__inputs
+            grid-template-columns: repeat(3,200px)
+@media ( max-width: 767px)	
+    .container
+        max-width: 500px
+    .promo
+        &__title
+            &_red
+                font-size: 40px
+            &_white
+                font-size: 25px
+    .advantages
+        &__wrapper
+            grid-template-columns: 1fr
+            grid-row-gap: 20px
+    .cards
+        &__wrapper
+            grid-template-columns: repeat(2,1fr)
+    .forms
+        &_cards
+            height: 200px
+        &__inputs
+            grid-template-columns: repeat(2,200px)
+            grid-template-rows: repeat(2, 45px)
+        &__bord
+            &_wrap
+                top: 90%
+        &__inputs
+            input
+                &:nth-child(3)
+                    grid-row: 2/3
+        &_questions
+            padding-bottom: 5px        
+    .reviews
+        &__carousel
+            width: 400px
+        &__next
+            right: 0
+        &__prev
+            left: 0
+    .footer
+        &__head
+            grid-template-columns: auto auto
+        &__text
+            display: none
 
+@media ( max-width: 575px)	
+    .container
+        max-width: 100%
+        padding: 15px
+    .hamburger
+        &__phone
+            display: block
+        &__list
+            margin-top: 60px
+        &__link, &__phone
+            margin-top: 25px
+    .btn
+        &_promo
+            width: 200px
+            height: 45px
+        &_cards
+            margin-top: 0
+        &_header
+            width: 130px
+            height: 35px
+            margin-left: 15px
+            font-size: 11px
+    .title
+        font-size: 20px
+    .subtitle
+        font-size: 14px
+    .promo
+        padding: 0
+        &__header
+            justify-content: flex-end
+        &__wrapper
+            grid-template-columns: repeat(2, 1fr) 
+        &__conection
+            display: none
+        &__subtitle
+            font-size: 16px
+        &__title
+            &_red
+                font-size: 25px
+            &_white
+                font-size: 16px
+        &__descr
+            font-size: 12px
+    .advantages
+        padding: 0
+    .logistics
+        padding: 0
+        &__wrapper
+            margin-top: 10px
+            grid-template-columns: 1fr
+            grid-gap: 20px
+        &__title
+            margin-top: 0
+        &__descr
+            font-size: 11px
+    .cards
+        padding: 0
+        &__wrapper
+            grid-template-columns: 1fr
+        &__item
+            grid-template-rows: 30px auto
+        &__type
+            line-height: 2.1
+        &__card
+            padding: 7px
+        &__descr
+            margin-top: 0
+        &__consultation
+            margin-top: 35px
+            font-size: 24px
+    .forms
+        &_cards
+            margin-top: 40px
+            height: 230px
+        &__bord
+            &_icon
+                height: 70px
+                top: -40px
+        &__inputs
+            grid-template-columns: 250px
+            grid-template-rows: repeat(3,45px)
+            grid-column-gap: 0
+            &_cards
+                margin-top: 38px
+            input
+                &:nth-child(2)
+                    grid-row: 2/3
+                &:nth-child(3)
+                    grid-row: 3/4
+    .scheme
+        padding: 0
+        &__wrapper
+            margin-top: 20px
+        &__item
+            margin-right: 0
+            margin-top: 10px
+    .reviews
+        &__carousel
+            width: 250px
+    .questions
+        padding: 20px 0
+        &__title
+            font-size: 16px
+    .footer
+        padding: 0
+        &__info
+            display: none
+        &__divider
+            margin-top: 15px
+        &__down
+            margin-top: 20px
+        &__site
+            font-size: 11px
+        &__confidentiality
+            font-size: 11px
     
