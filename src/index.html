@@ -44,7 +44,7 @@
                     <div class="promo__quest">Есть вопросы?</div>
                     <div class="promo__phone">+7 (926) 423 01 00</div>
                 </div>
-                <button class="btn btn_header">Перезвоните мне</button>
+                <button class="btn btn_header btn__modal">Перезвоните мне</button>
             </header>
             <h2 class="promo__subtitle">Global Opt - логистика полного цикла из Китая в Россию</h2>
             <h1 class="promo__title promo__title_red">ДОСТАВКА ГРУЗОВ ИЗ КИТАЯ</h1>
@@ -209,15 +209,15 @@
                 </div>   
             </div>
             <h3 class="cards__consultation">Заказать бесплатную консультацию</h3>
-                <form action="#" class="forms forms_cards">
-                        <img class="forms__bord forms__bord_icon" src="icons/consultation.png" alt="consultation">
-                        <div class="forms forms__inputs forms__inputs_cards">
-                            <input name="name" type="text" required placeholder="Ваше имя..."> 
-                            <input name="phone" type="text" required placeholder="Ваш номер телефона...">
-                            <input name="email" type="email" required placeholder="Ваш e-mail...">
-                        </div>
-                        <div class="forms__bord forms__bord_wrap"><button class=" btn btn_form">Отправить заявку</button>  </div> 
+            <div class="cards__form">
+                <img class="cards__icon" src="icons/consultation.png" alt="consultation">
+                <form action="#" class="form form_cards">
+                    <input name="name" type="text" required placeholder="Ваше имя..."> 
+                    <input name="phone" type="text" required placeholder="Ваш номер телефона...">
+                    <input name="email" type="email" required placeholder="Ваш e-mail...">
                 </form>
+                <div class="cards__btn"><button class=" btn btn_form">Отправить заявку</button>  </div> 
+            </div>
        </div>
     </section>
 
@@ -308,13 +308,11 @@
                     <div class="questions__title">Остались вопросы?</div>
                     <div class="questions__subtitle">Напишите нам!</div>
                 </div>
-                <form action="#" class="forms forms_questions">
-                    <div class="forms forms__inputs forms__inputs_questions">
-                        <input name="name" type="text" required placeholder="Ваше имя..."> 
-                        <input name="phone" type="text" required placeholder="Ваш номер телефона...">
-                        <input name="email" type="email" required placeholder="Ваш e-mail...">
-                        <input name="textarea" id="forms__textarea" type="textarea" required placeholder= "Сообщение...">
-                    </div>
+                <form action="#" class="form form_questions">
+                    <input name="name" type="text" required placeholder="Ваше имя..."> 
+                    <input name="phone" type="text" required placeholder="Ваш номер телефона...">
+                    <input name="email" id="email" type="email" required placeholder="Ваш e-mail...">
+                    <input name="textarea" id="textarea" type="textarea" required placeholder= "Сообщение...">
                     <button class="btn btn_form btn_questions">Отправить заявку</button>
                 </form>
             </div>
@@ -339,7 +337,7 @@
                         <div class="footer_questions">Есть вопросы?</div>
                         <div class="footer__phone">+7 (926) 423 01 00</div>
                     </div>
-                    <button class="btn btn_footer">Перезвоните мне</button>
+                    <button class="btn btn_footer btn__modal">Перезвоните мне</button>
                 </div>
                 
             </div>
@@ -352,7 +350,20 @@
         </div>
     </footer>
 
- 
+    <div class="overlay"></div>
+    <div class="modal">
+        <div class="modal__content">
+            <div class="modal__close">&times;</div>
+            <h3 class="modal__title">Просто заполните форму заявки            </h3>
+            <h4 class="modal__subtitle"> и мы перезвоним вам в течении 10 минут</h4>
+            <form class="form form_modal" action="#">
+                <input name="name" type="text" required placeholder="Ваше имя..."> 
+                <input name="phone" type="text" required placeholder="Ваш номер телефона...">
+                <button class="btn btn_modal"> Перезвоните мне</button> 
+            </form>
+        </div>
+    </div>
+
     <script src="js/script.js"></script>
 </body>
 </html>

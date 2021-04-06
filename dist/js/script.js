@@ -45,33 +45,6 @@ window.addEventListener('DOMContentLoaded', function(){
         slidesField.style.transform = `translateX(-${offset}px)`;
     });
 
-    // showSlides(slideIndex);
-    
-    // function showSlides(n) {
-    //     if (n > slides.length) {
-    //         slideIndex = 1;
-    //     }
-    //     if (n < 1) {
-    //         slideIndex = slides.length;
-    //     }
-    // }
-
-    // slides.forEach((item) => item.style.display = 'none');
-
-    // slides[slideIndex - 1].style.display = 'block';
-
-    // function plusSlides (n) {
-    //     showSlides(slideIndex += n);
-    // }
-
-    // prev.addEventListener('click', function(){
-    //     plusSlides(-1);
-    // });
-
-    // next.addEventListener('click', function(){
-    //     plusSlides(1);
-    // });
-
     //scroll
     const smoothLinks = document.querySelectorAll('a[href^="#"]');
     for (let smoothLink of smoothLinks) {
@@ -85,7 +58,6 @@ window.addEventListener('DOMContentLoaded', function(){
             });
         });
     };
-
 
     // hamburger
     const hamburgerBtn = document.querySelector('.hamburger'),
@@ -112,5 +84,47 @@ window.addEventListener('DOMContentLoaded', function(){
     toggleHamburger(hamburgerBtn, hamburgerMenu, menuItem, hamburgerClose);
 
 
+    //modal
+    const modal = document.querySelector('.modal'),
+          openModal = document.querySelectorAll('.btn__modal'),
+          closeModal = document.querySelector('.modal__close'),
+          overlay = document.querySelector('.overlay');
+
+    function toggleModal(triggers, modal, close, overlay){
+        triggers.forEach(trigger => {
+            trigger.addEventListener('click', (event) => {
+                event.preventDefault();
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+                overlay.style.opacity = '1';
+                overlay.style.visibility =  'visible';
+            })
+        });
+        close.addEventListener('click', () => {
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+            overlay.style.opacity = '0';
+            overlay.style.visibility =  'hidden';
+        });
+        
+        document.addEventListener('click', (e) => {
+            if(e.target === overlay){
+                modal.style.display = "none";
+                document.body.style.overflow = '';
+                overlay.style.opacity = '0';
+                overlay.style.visibility =  'hidden';
+            }
+        })
+        document.addEventListener('keydown', (e) => {
+            if(e.code === 'Escape') {
+                modal.style.display = "none";
+                document.body.style.overflow = '';
+                overlay.style.opacity = '0';
+                overlay.style.visibility =  'hidden';
+            }
+        });
+    }
+
+    toggleModal(openModal, modal, closeModal, overlay);
 
 });
