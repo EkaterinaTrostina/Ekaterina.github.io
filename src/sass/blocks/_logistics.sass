@@ -8,9 +8,13 @@
         grid-template-rows: max-content
         grid-auto-rows: max-content
         justify-content: center
+    &__item
+        display: grid
+        grid-template-rows: 200px max-content max-content
     &__img
-        height: auto
+        height: 100%
         width: 100%
+        object-fit: contain
     &__title
         margin-top: 24px
         font-size: 16px

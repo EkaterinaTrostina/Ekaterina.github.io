@@ -28,14 +28,15 @@
             background-color: $main-color
     &__wrap
         overflow: auto
-        right: 0 
+        left: -100%
         top: 0
-        display: none
+        display: block
         position: fixed
         z-index: 10
         background-color: #7a7979fa
         width: 100%
         height: 100%
+        transition: all .4s ease
     &__list
         margin-top: 80px
     &__link, &__phone
@@ -68,4 +69,4 @@
     &__conection
         display: none
 .active
-    display: block                
+    left: 0        
