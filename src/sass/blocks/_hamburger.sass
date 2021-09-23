@@ -1,0 +1,72 @@
+.hamburger
+    display: none
+    align-items: center
+    position: fixed
+    top: 35px
+    left: 20px
+    width: 30px
+    height: 26px
+    cursor: pointer
+    span
+        position: relative
+        height: 3px
+        width: 100%
+        background-color: $main-color
+        &::before, &::after
+            position: absolute
+        &::before
+            content: ''
+            top: 8px    
+            width: 100%
+            height: 100%
+            background-color: $main-color
+        &::after
+            content: ''
+            top: -8px 
+            width: 100%
+            height: 100%
+            background-color: $main-color
+    &__wrap
+        overflow: auto
+        left: -100%
+        top: 0
+        display: block
+        position: fixed
+        z-index: 10
+        background-color: #7a7979fa
+        width: 100%
+        height: 100%
+        transition: all .4s ease
+    &__list
+        margin-top: 80px
+    &__link, &__phone
+        overflow: hidden
+        list-style-type: none
+        text-align: center
+        margin-top: 30px
+        font-size: 25px
+        font-weight: 300
+        &:first-child
+            margin-top: 0
+        a
+            color: #fff
+            text-decoration: none
+            &:hover
+                color: black
+    &__phone
+        display: none
+        color: #fff
+    &__close
+        right: 10px
+        top: 10px
+        position: absolute
+        width: 50px
+        font-size: 35px
+        height: 50px
+        background: none
+        border: none
+        outline: none
+    &__conection
+        display: none
+.active
+    left: 0        

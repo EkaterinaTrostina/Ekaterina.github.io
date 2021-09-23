@@ -1,0 +1,30 @@
+.logistics 
+    padding: 50px 0 55px 0
+    &__wrapper
+        margin-top: 37px
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-column-gap: 30px
+        grid-template-rows: max-content
+        grid-auto-rows: max-content
+        justify-content: center
+    &__item
+        display: grid
+        grid-template-rows: 200px max-content max-content
+    &__img
+        height: 100%
+        width: 100%
+        object-fit: contain
+    &__title
+        margin-top: 24px
+        font-size: 16px
+        font-weight: 700
+        text-align: center
+        color: $main-color
+        line-height: 1.57
+    &__descr
+        font-size: 13px
+        font-weight: 500
+        line-height: 1.57
+        text-align: justify
+        color: #3a3a3a

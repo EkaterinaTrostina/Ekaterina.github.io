@@ -1,0 +1,209 @@
+@media (max-width: 1200px)
+    .container
+        max-width: 900px
+    .promo
+        &__logo
+            width: 65px
+            height: 69px
+        &__link
+            margin-right: 15px
+            font-size: 13px
+            &:after
+                margin-left: 7px
+                height: 18px
+        &__phone
+            font-size: 17px
+    .logistics
+        &__wrapper
+            grid-gap: 20px
+    .cards 
+        &__wrapper
+            grid-template-columns: repeat(3, 1fr)
+    .footer
+        &__logo
+            margin-right: 15px
+
+@media (max-width: 991px)
+    .container
+        max-width: 700px
+    .hamburger
+        display: flex
+    .promo
+        &__header
+            justify-content: space-around
+        &__head
+            display: none
+        &__subtitle
+            margin-top: 15px
+    .form
+        input
+            width: 180px
+@media ( max-width: 767px)	
+    .container
+        max-width: 500px
+    .promo
+        &__dot
+            height: 5px
+        &__title
+            &_red
+                font-size: 40px
+            &_white
+                font-size: 25px
+    .advantages
+        &__wrapper
+            grid-template-columns: 1fr
+            grid-row-gap: 20px
+    .cards
+        &__form
+            min-height: 300px
+        &__btn
+            top: 88%
+        &__wrapper
+            grid-template-columns: repeat(2,1fr)
+    .form
+        display: flex
+        flex-direction: column
+        &_cards
+            margin-top: 10px
+        input
+            width: 260px
+            height: 35px
+            margin-top: 10px
+            &:first-child
+                margin-top: 0
+        #textarea
+            height: 80px
+            width: 100%
+    .btn
+        &_questions
+            grid-column: 1/3
+    .reviews
+        &__carousel
+            width: 400px
+        &__next
+            right: 0
+        &__prev
+            left: 0
+    .footer
+        &__head
+            grid-template-columns: auto auto
+        &__text
+            display: none
+
+@media ( max-width: 575px)	
+    .container
+        max-width: 100%
+        padding: 15px
+    .hamburger
+        &__phone
+            display: block
+        &__list
+            margin-top: 60px
+        &__link, &__phone
+            margin-top: 25px
+    .btn
+        &_promo
+            width: 200px
+            height: 45px
+        &_cards
+            margin-top: 0
+        &_header
+            width: 130px
+            height: 35px
+            margin-left: 15px
+            font-size: 11px
+    .title
+        font-size: 20px
+    .subtitle
+        font-size: 14px
+    .promo
+        padding: 0
+        &__header
+            justify-content: flex-end
+        &__wrapper
+            grid-template-columns: repeat(2, 1fr) 
+        &__conection
+            display: none
+        &__subtitle
+            font-size: 16px
+        &__title
+            &_red
+                font-size: 25px
+            &_white
+                font-size: 16px
+        &__descr
+            font-size: 12px
+    .advantages
+        padding: 0
+    .logistics
+        padding: 0
+        &__wrapper
+            margin-top: 10px
+            grid-template-columns: 1fr
+            grid-gap: 20px
+        &__title
+            margin-top: 0
+        &__descr
+            font-size: 11px
+    .cards
+        padding: 0
+        padding-bottom: 20px
+        &__wrapper
+            grid-template-columns: 1fr
+        &__item
+            grid-template-rows: 30px auto
+        &__type
+            line-height: 2.1
+        &__card
+            padding: 7px
+        &__descr
+            margin-top: 0
+        &__consultation
+            margin-top: 35px
+            font-size: 24px
+        &__form
+            margin-top: 40px
+            height: 230px
+        &__icon
+            height: 70px
+            top: -40px
+        &__btn
+            top: 90%
+    .form
+        &_cards
+            margin-top: 0
+        input
+            width: 220px
+        .modal__input
+            width: 220px
+    .scheme
+        padding: 0
+        &__wrapper
+            margin-top: 20px
+        &__item
+            margin-right: 0
+            margin-top: 10px
+    .reviews
+        padding: 0
+        &__carousel
+            width: 250px
+    .questions
+        padding: 20px 0
+        &__title
+            font-size: 16px
+    .footer
+        padding: 0
+        &__info
+            display: none
+        &__divider
+            margin-top: 15px
+        &__down
+            margin-top: 20px
+        &__site
+            font-size: 11px
+        &__confidentiality
+            font-size: 11px
+    .modal
+        width: 70%
+
+    
